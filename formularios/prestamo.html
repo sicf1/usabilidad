@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de prestamo - Biblioteca Médica</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <figure>
+                <img src="../imagenes/logo-biblioteca-medica.png" alt="Logo biblioteca médica">
+            </figure>
+        </a>
+        <h1>Biblioteca Médica - Universidad de Alicante</h1>
+    </header>
+    <main>
+        <form action="../formularios/res_prestamo.html" method="get">
+            <h2>Formulario de solicitud de préstamo</h2>
+            <p>Antes de rellenar el formulario, lea las condiciones en:</p>
+            <p><a href="../formularios/normas.html">Normas y condiciones</a></p>
+            <p>Instrucciones: Por favor, rellena todos los campos obligatorios marcados con un asterisco (*). 
+                Todos los campos deben estar correctamente completados antes de enviar el formulario.</p>
+            
+            <p><label for="libro">Nombre del libro*: <input id="libro" type="text" required></label></p>
+            <p><label for="isbn">ISBN*: <input id="isbn" type="text" required></textarea></label></p>
+            <p><label for="opciones">Yo soy:</label>
+                <select id="opciones" name="opcion">
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Científico">Científico</option>
+                    <option value="Médico">Médico</option>
+                    <option value="Educador">Educador</option>
+                    <option value="Periodista">Periodista</option>
+                </select>
+            </p>
+            <p><label for="fechaRecogida">Fecha prevista de recogida: <input type="date" id="fechaRecogida" name="fechaRecogida"></label></p>
+            
+            <p><label for="fechaDevolucion">Fecha de devolución: <input type="date" id="fechaDevolucion" name="fechaDevolucion"></label></p>
+            
+            <p><label for="correo">Correo electrónico institucional*: <input type="email" id="correo" name="correo" required></label></p>
+            
+            <p><label for="aceptacion">Acepto las políticas y condiciones del préstamo *:<input type="checkbox" id="aceptacion" name="aceptacion" required></label></p>
+            
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="../index.html">Inicio</a></p>
+        <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
