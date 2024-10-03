@@ -21,8 +21,9 @@
             <p>Instrucciones: Por favor, rellena todos los campos obligatorios marcados con un asterisco (*). 
                 Todos los campos deben estar correctamente completados antes de enviar el formulario.</p>
             
-            <p><label for="libro">Nombre del libro*: <input id="libro" type="text" required></label></p>
-            <p><label for="isbn">ISBN*: <input id="isbn" type="text" required></label></p>
+            <p><label for="nombre">Nombre Completo*: <input id="nombre" type="text" placeholder="Escribe tu nombre" required></label></p>
+            <p><label for="libro">Nombre del libro*: <input id="libro" type="text" placeholder="Escribe el nombre libro a solicitar" required></label></p>
+            <p><label for="isbn">ISBN (formato: 978-3-16-148410-0)*: <input id="isbn" type="text" pattern="978-\d-\d{2}-\d{6}-\d" placeholder="978-3-16-148410-0" required></label></p>
             <p><label for="opciones">Yo soy:</label>
                 <select id="opciones" name="opcion">
                     <option value="Estudiante">Estudiante</option>
@@ -30,13 +31,23 @@
                     <option value="Médico">Médico</option>
                     <option value="Educador">Educador</option>
                     <option value="Periodista">Periodista</option>
+                    <option value="Otro">Otro</option>
                 </select>
             </p>
+            <p><label for="email">Correo Electrónico Institucional*: <input id="email" type="email" placeholder="ejemplo@dominio.com" required></label></p>
+
+            <p><label for="edad">Edad en años (debes ser mayor de edad)*: <input id="edad" type="number" min="18" max="100" required></label></p>
+
+            <p><label for="colorFavorito">Color Favorito: <input id="colorFavorito" type="color"></label></p>
+
+            <p><label for="satisfaccion">Nivel de Satisfacción en tu última solicitud (en caso de no ser tu primer préstamo):
+                <input id="satisfaccion" type="range" min="0" max="5" step="1"></label></p>
+
+            <p><label for="telefono">Teléfono (formato: +34 123456789)*: <input id="telefono" type="tel" pattern="\+34\s\d{3}\d{3}\d{3}" placeholder="+34 123456789" required></label></p>
+        
             <p><label for="fechaRecogida">Fecha prevista de recogida: <input type="date" id="fechaRecogida" name="fechaRecogida"></label></p>
             
             <p><label for="fechaDevolucion">Fecha de devolución: <input type="date" id="fechaDevolucion" name="fechaDevolucion"></label></p>
-            
-            <p><label for="correo">Correo electrónico institucional*: <input type="email" id="correo" name="correo" required></label></p>
             
             <p><label for="aceptacion">Acepto las políticas y condiciones del préstamo *:<input type="checkbox" id="aceptacion" name="aceptacion" required></label></p>
             
