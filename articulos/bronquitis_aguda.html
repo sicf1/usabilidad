@@ -17,10 +17,13 @@
         <h1>Biblioteca Médica - Universidad de Alicante</h1>
     </header>
 
-    <p><a href="../indices/indiceB.html">Atrás</a></p>
-    <p><a href="../index.html">Inicio</a></p>
-
     <main>
+        <nav aria-label="Breadcrumb">
+            <a href="../index.html">Inicio</a>&gt; 
+            <a href="../indices/indiceB.html">Indice B</a>&gt; 
+            <a href="bronquitis_aguda.html">Página Actual</a>
+        </nav>
+
         <h2>Bronquitis aguda</h2>
         <p>Es la hinchazón e inflamación del tejido los bronquios, las vías que llevan aire hacia los pulmones. Esta hinchazón estrecha las vías respiratorias, lo cual dificulta la respiración. Otro síntoma de bronquitis es tos y tos con flemas. Aguda significa que los síntomas solo han estado presentes por un período corto.</p>
         <img src="../imagenes/bronquitis.jpg" alt="Bronquios normales y bronquitis con bronquitis">
@@ -28,7 +31,7 @@
         <h3>Causas</h3>
         <p>Cuando se produce la bronquitis aguda, casi siempre viene después de haber tenido un resfriado o una enfermedad seudogripal. La infección de bronquitis normalmente es causada por un virus. En primer lugar, afecta a la nariz, los senos paranasales y la garganta. Luego, se propaga a las vías respiratorias que llevan a los pulmones.</p>
         <img src="../imagenes/bronquitis_causas1.jpg" alt="Bronquios primarios y secundarios inflamados por infección">
-        <p>Algunas veces, las bacterias también infectan las vías respiratorias. Esto es más común en personas con enfermedad pulmonar obstructiva crónica (EPOC).</p>
+        <p>Algunas veces, las bacterias también infectan las vías respiratorias. Esto es más común en personas con enfermedad pulmonar obstructiva crónica (<abbr title="enfermedad pulmonar obstructiva crónica">EPOC</abbr>).</p>
         <p>La bronquitis crónica es una afección prolongada. Para hacer el diagnóstico de bronquitis crónica, usted tiene que tener tos con flema la mayoría de los días del mes durante por lo menos 3 meses.</p>
         <img src="../imagenes/bronquitis_causas2.jpg" alt="Bronquios primarios y secundarios inflamados por humo">
     
@@ -61,54 +64,58 @@
             <li>Tome mucho líquido.</li>
             <li>Si tiene asma u otra afección pulmonar crónica, use un inhalador.</li>
             <li>Descanse mucho.</li>
-            <li>Tome ácido acetilsalicílico (aspirin) o paracetamol si presenta fiebre. NO LES de ácido acetilsalicílico a las personas mayores de 18 años.</li>
+            <li>Tome ácido acetilsalicílico (<span lang="en">aspirin</span>) o paracetamol si presenta fiebre. NO LES de ácido acetilsalicílico a las personas mayores de 18 años.</li>
             <li>Utilice un humidificador o vapor en el baño.</li>
         </ul>
         
         <table>
-            <caption><h3>Ciertos medicamentos que usted puede comprar sin receta y pueden ayudarle a disolver o aflojar la flema:</h3></caption>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nombre del medicamento</th>
-                <th scope="col">Descripción</th>
-                <th scope="col">Indicadores</th>
-                <th scope="col">Contraindicaciones</th>
-            </tr>
-            <tr>
-                <th scope="row">1</th>
-                <td>Broncodilatadores</td>
-                <td>Relajan los músculos de las vías respiratorias.</td>
-                <td>Alivio de la tos y dificultad respiratoria.</td>
-                <td>Hipersensibilidad a componentes.</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Antiinflamatorios no esteroides (AINEs)</td>
-                <td>Reducen la inflamación y alivian el dolor.</td>
-                <td>Tratamiento del malestar y fiebre.</td>
-                <td>Úlceras gástricas, insuficiencia renal.</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Antibióticos</td>
-                <td>Tratamiento de infecciones bacterianas asociadas.</td>
-                <td>Bronquitis bacteriana.</td>
-                <td>Alergias a penicilinas, enfermedades hepáticas.</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Expectorantes</td>
-                <td>Ayudan a eliminar el moco de las vías respiratorias.</td>
-                <td>Facilitan la expectoración en casos de mucosidad.</td>
-                <td>Afecciones pulmonares severas.</td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Antitusígenos</td>
-                <td>Suprimen la tos irritativa.</td>
-                <td>Tos seca y persistente.</td>
-                <td>Tos productiva, enfermedad respiratoria crónica.</td>
-            </tr>
+            <caption>Ciertos medicamentos que usted puede comprar sin receta pueden ayudarle a disolver o aflojar la flema.</caption>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre del medicamento</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Indicadores</th>
+                    <th scope="col">Contraindicaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Broncodilatadores</td>
+                    <td>Relajan los músculos de las vías respiratorias.</td>
+                    <td>Alivio de la tos y dificultad respiratoria.</td>
+                    <td>Hipersensibilidad a componentes.</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Antiinflamatorios no esteroides (<abbr title="Antiinflamatorios no esteroides">AINEs</abbr>)</td>
+                    <td>Reducen la inflamación y alivian el dolor.</td>
+                    <td>Tratamiento del malestar y fiebre.</td>
+                    <td>Úlceras gástricas, insuficiencia renal.</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Antibióticos</td>
+                    <td>Tratamiento de infecciones bacterianas asociadas.</td>
+                    <td>Bronquitis bacteriana.</td>
+                    <td>Alergias a penicilinas, enfermedades hepáticas.</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Expectorantes</td>
+                    <td>Ayudan a eliminar el moco de las vías respiratorias.</td>
+                    <td>Facilitan la expectoración en casos de mucosidad.</td>
+                    <td>Afecciones pulmonares severas.</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Antitusígenos</td>
+                    <td>Suprimen la tos irritativa.</td>
+                    <td>Tos seca y persistente.</td>
+                    <td>Tos productiva, enfermedad respiratoria crónica.</td>
+                </tr>
+            </tbody>
         </table>
         <p>Otros consejos:</p>
         <ul>

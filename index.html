@@ -13,15 +13,43 @@
     </header>
         
     
-    <main>
-        <h2>Descripción</h2>
+    <h2>Descripción</h2>
         <p>Biblioteca destinada a ayudar al alumnado interesado en las ciencias de la salud</p>
-        <nav><h2><a href="formularios/buscador.html">Buscador</a></h2></nav>
-        <h2>Índice alfabético de temas</h2>
+        <nav>
+            <h2>Tabla de contenidos</h2>
+            <ul>
+                <li><a href="#buscador">Buscador</a></li>
+                <li><a href="#indice-alfabetico">Índice alfabético de temas</a></li>
+                <li><a href="#temas-destacados">Temas destacados</a>
+                    <ul>
+                        <li><a href="#celulas-falciformes">Enfermedad de células falciformes</a></li>
+                        <li><a href="#bronquitis">Bronquitis aguda</a></li>
+                    </ul>
+                </li>
+                <li><a href="#enfermedades-relacionadas">Enfermedades relacionadas</a>
+                    <ul>
+                        <li><a href="#cabeza">Dolor de cabeza</a></li>
+                        <li><a href="#corazon">Ataque al corazón</a></li>
+                        <li><a href="#estomago">Gastroenteritis</a></li>
+                        <li><a href="#intestino">Enfermedad de Crohn</a></li>
+                        <li><a href="#brazo">Síndrome de túnel carpiano</a></li>
+                        <li><a href="#pierna">Insuficiencia venosa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#prestamo">Préstamo de libros</a></li>
+                <li><a href ="#declaracion">Declaración de accesibilidad</a></li>
+                <li><a href="#mapa">Mapa del sitio</a></li>
+            </ul>  
+        </nav>
+
+
+        <h2 id="buscador"><a href="formularios/buscador.html">Buscador</a></h2>
+        <h2 id="indice-alfabetico">Índice alfabético de temas</h2>
         <nav>
             <ul>
-                <li><a href="indices/indiceA.html">A</a></li>
-                <li><a href="indices/indiceB.html">B</a></li>
+                <li id="indiceA"><a href="indices/indiceA.html">A</a></li>
+                <li id="indiceB"><a href="indices/indiceB.html">B</a></li>
                 <li><a href="articulos/error.html">C</a></li>
                 <li><a href="articulos/error.html">D</a></li>
                 <li><a href="articulos/error.html">E</a></li>
@@ -51,36 +79,40 @@
         </nav>
 
         <aside>
-            <h2>Temas destacados</h2>
-            <p><a href="https://medlineplus.gov/spanish/sicklecelldisease.html">Enfermedad de células falciformes</a></p>
+            <h2 id="temas-destacados">Temas destacados</h2>
+            <p id="celulas-falciformes"><a href="https://medlineplus.gov/spanish/sicklecelldisease.html">Enfermedad de células falciformes</a></p>
             <figure>
                 <img width="560" height="315" src="imagenes/celulasfalciformes.jpeg" alt="Células en la sangre">
             </figure>
-            <p><a href="../RepoUsabilidad/articulos/bronquitis_aguda.html">Bronquitis aguda</a></p>
+            <p id="bronquitis"><a href="articulos/bronquitis_aguda.html">Bronquitis aguda</a></p>
             <figure>
                 <img width="560" height="315" src="imagenes/bronquitis_mujer.jpeg" alt="Mujer tosiendo">
             </figure>
-            <h3>Enfermedades relacionadas</h3>
+
+            <h2 id="enfermedades-relacionadas">Enfermedades relacionadas</h2>
             <p>
                 <figure>
                     <img src="imagenes/cuerpo.jpg" alt="ilustración anatómica del cuerpo humano" usemap="#cuerpohumano">
                 </figure>
             <map name="cuerpohumano">
-                <area shape="circle" coords="248,43,41" href="https://medlineplus.gov/spanish/ency/article/003024.htm" alt="Causas del dolor de cabeza">
-                <area shape="poly" coords="228,305,289,329,289,391,240,411,223,369" href="https://medlineplus.gov/spanish/heartattack.html" alt="Síntomas de un ataque cardíaco">
-                <area shape="poly" coords="271,408,316,404,324,441,300,468,264,487,217,484,214,466" href="https://medlineplus.gov/spanish/gastroenteritis.html" alt="Síntomas de la gastroenteritis">
-                <area shape="circle" coords="247,585,72" href="https://medlineplus.gov/spanish/ency/article/000249.htm" alt="Enfermedad de Crohn">
-                <area shape="rect" coords="36,482,111,734" href="https://medlineplus.gov/spanish/carpaltunnelsyndrome.html#:~:text=El%20s%C3%ADndrome%20del%20t%C3%BAnel%20carpiano%20(o%20s%C3%ADndrome%20de%20t%C3%BAnel%20carpal,un%20nervio%20en%20la%20mu%C3%B1eca." alt="Síndrome del túnel carpiano">
-                <area shape="rect" coords="251,799,355,1234" href="https://medlineplus.gov/spanish/ency/article/000203.htm" alt="Síntomas de insuficiencia venosa">
+                <area id="cabeza" shape="circle" coords="248,43,41" href="https://medlineplus.gov/spanish/ency/article/003024.htm" alt="Causas del dolor de cabeza">
+                <area id="corazon" shape="poly" coords="228,305,289,329,289,391,240,411,223,369" href="https://medlineplus.gov/spanish/heartattack.html" alt="Síntomas de un ataque cardíaco">
+                <area id="estomago" shape="poly" coords="271,408,316,404,324,441,300,468,264,487,217,484,214,466" href="https://medlineplus.gov/spanish/gastroenteritis.html" alt="Síntomas de la gastroenteritis">
+                <area id="intestino" shape="circle" coords="247,585,72" href="https://medlineplus.gov/spanish/ency/article/000249.htm" alt="Enfermedad de Crohn">
+                <area id="brazo" shape="rect" coords="36,482,111,734" href="https://medlineplus.gov/spanish/carpaltunnelsyndrome.html#:~:text=El%20s%C3%ADndrome%20del%20t%C3%BAnel%20carpiano%20(o%20s%C3%ADndrome%20de%20t%C3%BAnel%20carpal,un%20nervio%20en%20la%20mu%C3%B1eca." alt="Síndrome del túnel carpiano">
+                <area id="pierna" shape="rect" coords="251,799,355,1234" href="https://medlineplus.gov/spanish/ency/article/000203.htm" alt="Síntomas de insuficiencia venosa">
             </map>
         </aside>
 
         <aside>
-            <h2><a href = "formularios/contacto.html">Contacto</a></h2>
-            <h2><a href = "formularios/prestamo.html">Préstamos de libros</a></h2>
+            <h3 id="contacto"><a href = "formularios/contacto.html">Contacto</a></h3>
+            <h3 id="prestamo"><a href = "formularios/prestamo.html">Préstamos de libros</a></h3>
+            <h3 id="declaracion"><a href = "extras/declaracion.html">Declaración de accesibilidad</a></h3>
+            <h3 id="mapa"><a href = "extras/sitemap.html">Mapa del sitio</a></h3>
+
         </aside>
         
-    </main>  
+    </main>
   
 
     <footer>

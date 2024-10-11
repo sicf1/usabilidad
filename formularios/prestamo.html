@@ -14,6 +14,12 @@
         <h1>Biblioteca Médica - Universidad de Alicante</h1>
     </header>
     <main>
+        <nav aria-label="Breadcrumb">
+            <a href="../index.html">Inicio</a> &gt;
+            <a href="prestamo.html">Página Actual</a>
+        </nav>
+
+        
         <form action="../formularios/res_prestamo.html" method="get">
             <h2>Formulario de solicitud de préstamo</h2>
             <p>Antes de rellenar el formulario, lea las condiciones en:</p>
@@ -40,7 +46,8 @@
 
             <p><label for="colorFavorito">Color Favorito: <input id="colorFavorito" type="color"></label></p>
 
-            <p><label for="satisfaccion">Nivel de Satisfacción en tu última solicitud (de 0 a 5): <input id="satisfaccion" type="range" min="0" max="5" step="1"></label></p>
+            <p><label for="satisfaccion">Nivel de Satisfacción en tu última solicitud (en caso de no ser tu primer préstamo):
+                <input id="satisfaccion" type="range" min="0" max="5" step="1"></label></p>
 
             <p><label for="telefono">Teléfono (formato: +34123456789)*: <input id="telefono" type="tel" pattern="\+34\d{3}\d{3}\d{3}" placeholder="+34123456789" required></label></p>
         
