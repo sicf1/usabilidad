@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario de prestamo - Biblioteca Médica</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -20,17 +23,17 @@
         </nav>
 
         
-        <form action="../formularios/res_prestamo.html" method="get">
+        <form action="../formularios/res_prestamo.html" method="get" class="loan-form">
             <h2>Formulario de solicitud de préstamo</h2>
             <p>Antes de rellenar el formulario, lea las condiciones en:</p>
             <p><a href="../formularios/normas.html">Normas y condiciones</a></p>
             <p>Instrucciones: Por favor, rellena todos los campos obligatorios marcados con un asterisco (*). 
                 Todos los campos deben estar correctamente completados antes de enviar el formulario.</p>
             
-            <p><label for="nombre">Nombre Completo*: <input id="nombre" type="text" placeholder="Escribe tu nombre" required></label></p>
-            <p><label for="libro">Nombre del libro*: <input id="libro" type="text" placeholder="Escribe el nombre libro a solicitar" required></label></p>
-            <p><label for="isbn">ISBN (formato: 978-3-16-148410-0)*: <input id="isbn" type="text" pattern="978-\d-\d{2}-\d{6}-\d" placeholder="978-3-16-148410-0" required></label></p>
-            <p><label for="opciones">Yo soy:</label>
+            <label for="nombre">&#128100; Nombre Completo*: <input id="nombre" type="text" placeholder="Escribe tu nombre" required></label>
+            <label for="libro"> <span class="material-symbols-outlined">book_2</span> Nombre del libro*: <input id="libro" type="text" placeholder="Escribe el nombre libro a solicitar" required></label>
+            <label for="isbn">ISBN (formato: 978-3-16-148410-0)*: <input id="isbn" type="text" pattern="978-\d-\d{2}-\d{6}-\d" placeholder="978-3-16-148410-0" required></label>
+            <label for="opciones">Yo soy:</label>
                 <select id="opciones" name="opcion">
                     <option value="Estudiante">Estudiante</option>
                     <option value="Científico">Científico</option>
@@ -39,31 +42,34 @@
                     <option value="Periodista">Periodista</option>
                     <option value="Otro">Otro</option>
                 </select>
-            </p>
-            <p><label for="email">Correo Electrónico Institucional*: <input id="email" type="email" placeholder="ejemplo@dominio.com" required></label></p>
+            
+            <label for="email"> <span class="material-symbols-outlined">mail</span> Correo Electrónico Institucional*: <input id="email" type="email" placeholder="ejemplo@dominio.com" required></label>
 
-            <p><label for="edad">Edad en años (debes ser mayor de edad)*: <input id="edad" type="number" min="18" max="100" required></label></p>
+            <label for="edad">Edad en años (debes ser mayor de edad)*: <input id="edad" type="number" min="18" max="100" required></label>
 
-            <p><label for="colorFavorito">Color Favorito: <input id="colorFavorito" type="color"></label></p>
+            <label for="colorFavorito">Color Favorito: <input id="colorFavorito" type="color"></label>
 
-            <p><label for="satisfaccion">Nivel de Satisfacción en tu última solicitud (en caso de no ser tu primer préstamo):
-                <input id="satisfaccion" type="range" min="0" max="5" step="1"></label></p>
+            <label for="satisfaccion">Nivel de Satisfacción en tu última solicitud (de 0 a 5):
+                <input id="satisfaccion" type="range" min="0" max="5" step="1"></label>
 
-            <p><label for="telefono">Teléfono (formato: +34123456789)*: <input id="telefono" type="tel" pattern="\+34\d{3}\d{3}\d{3}" placeholder="+34123456789" required></label></p>
+            <label for="telefono">&#9742; Teléfono (formato: +34123456789)*: <input id="telefono" type="tel" pattern="\+34\d{3}\d{3}\d{3}" placeholder="+34123456789" required></label>
         
-            <p><label for="fechaRecogida">Fecha prevista de recogida: <input type="date" id="fechaRecogida" name="fechaRecogida"></label></p>
+            <label for="fechaRecogida">Fecha prevista de recogida: <input type="date" id="fechaRecogida" name="fechaRecogida"></label>
             
-            <p><label for="fechaDevolucion">Fecha de devolución: <input type="date" id="fechaDevolucion" name="fechaDevolucion"></label></p>
+            <label for="fechaDevolucion">Fecha de devolución: <input type="date" id="fechaDevolucion" name="fechaDevolucion"></label>
             
-            <p><label for="aceptacion">Acepto las políticas y condiciones del préstamo *:<input type="checkbox" id="aceptacion" name="aceptacion" required></label></p>
+            <label for="aceptacion">Acepto las políticas y condiciones del préstamo *:<input type="checkbox" id="aceptacion" name="aceptacion" required></label>
             
-            <p><input type="submit" value="Enviar"></p>
+            <button type="submit">Enviar</button>
         </form>
     </main>
 
     <footer>
-        <p><a href="../index.html">Inicio</a></p>
-        <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>
+        <div class="contenedor">
+            <p><a href="../index.html">Inicio</a></p>
+            <p id="declaracion"><a href = "../extras/declaracion.html">Declaración de accesibilidad</a></h3>
+            <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>  
+        </div>
     </footer>
 
 </body>

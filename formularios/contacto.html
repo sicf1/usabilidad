@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario de contacto - Biblioteca Médica</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,14 +21,14 @@
             <a href="contacto.html">Página Actual</a>
         </nav>
         
-        <form action="../formularios/consulta.html" method="post">
+        <form action="../formularios/consulta.html" method="get" class="contact-form">
             <h2>Formulario de Contacto</h2>
             <p>Instrucciones: Por favor, rellena todos los campos obligatorios marcados con un asterisco (*). 
                 Todos los campos deben estar correctamente completados antes de enviar el formulario.</p>
             
-            <p><label for="asunto">Asunto*: <input id="asunto" type="text" required></label></p>
-            <p><label for="comentario">Comentario*: <textarea id="comentario" name="comentario" required></textarea></label></p>
-            <p><label for="opciones">Yo soy:</label>
+            <label for="asunto">Asunto*: <input id="asunto" type="text" required></label>
+            <label for="comentario">Comentario*: <textarea id="comentario" name="comentario" required></textarea></label>
+            <label for="opciones">Yo soy:</label>
                 <select id="opciones" name="opcion">
                     <option value="Paciente">Paciente</option>
                     <option value="Científico">Científico</option>
@@ -35,28 +37,28 @@
                     <option value="Fabricante">Fabricante</option>
                     <option value="Periodista">Periodista</option>
                 </select>
-            </p>
-            <p><label for="fechaNacimiento">Fecha de nacimiento <input type="date" id="fechaNacimiento" name="fechaNacimiento"></label></p>
+            
+            <label for="fechaNacimiento">Fecha de nacimiento <input type="date" id="fechaNacimiento" name="fechaNacimiento"></label>
         
             <p>Sexo:</p>
-                <input type="radio" id="hombre" name="sexo" value="hombre">
-                <label for="hombre">Hombre</label>
-                <input type="radio" id="mujer" name="sexo" value="mujer">
-                <label for="mujer">Mujer</label>
-                <input type="radio" id="otro" name="sexo" value="otro">
-                <label for="otro">Otro</label>
+                <label for="hombre"><span class="material-symbols-outlined">male</span> Hombre <input type="radio" id="hombre" name="sexo" value="hombre"></label>
+                <label for="mujer"><span class="material-symbols-outlined">female</span> Mujer <input type="radio" id="mujer" name="sexo" value="mujer"></label>
+                <label for="otro"><span class="material-symbols-outlined">agender</span> Otro <input type="radio" id="otro" name="sexo" value="otro"></label>
             
-            <p><label for="correo">Correo electrónico: <input type="email" id="correo" name="correo"></label></p>
+            <label for="correo"><span class="material-symbols-outlined">mail</span> Correo electrónico: <input type="email" id="correo" name="correo"></label>
             
-            <p><label for="verificacion">Deseo recibir más información:<input type="checkbox" id="verificacion" name="verificacion"></label></p>
+            <label for="verificacion">Deseo recibir más información:<input type="checkbox" id="verificacion" name="verificacion"></label>
             
-            <p><input type="submit" value="Enviar"></p>
+            <button type="submit">Enviar</button>
         </form>
     </main>
 
     <footer>
-        <p><a href="../index.html">Inicio</a></p>
-        <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>
+        <div class="contenedor">
+            <p><a href="../index.html">Inicio</a></p>
+            <p id="declaracion"><a href = "../extras/declaracion.html">Declaración de accesibilidad</a></h3>
+            <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>  
+        </div>
     </footer>
 
 </body>

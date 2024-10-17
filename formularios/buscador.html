@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario buscador - Biblioteca Médica</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,7 +21,7 @@
             <a href="buscador.html">Página Actual</a>
         
 
-            <form action="../formularios/busqueda.html" method="get">
+            <form action="../formularios/busqueda.html" method="get" class="search-form">
                 <p>
                     <label for="campos1">Buscar por:</label>
                     <select id="campos1" name="campos1">
@@ -76,14 +78,20 @@
                     <input type="text" id="busqueda4" name="busqueda4">
                 </p>
 
-                <button type="submit">Buscar</button>
+                <button type="submit">
+                    <span class="material-symbols-outlined">search</span> 
+                    Buscar
+                </button>
             </form>
         </nav>
     </main>
 
     <footer>
-        <p><a href="../index.html">Inicio</a></p>
-        <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>
+        <div class="contenedor">
+            <p><a href="../index.html">Inicio</a></p>
+            <p id="declaracion"><a href = "../extras/declaracion.html">Declaración de accesibilidad</a></h3>
+            <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>  
+        </div>
     </footer>
 
 </body>
