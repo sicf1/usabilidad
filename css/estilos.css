@@ -230,7 +230,7 @@ a:focus, button:focus {
 }
 
 
-/* Espaciado y distribución tablas */
+/* Espaciado y distribución tablas*/
 #articulos-medicos, #medicamentos1 {
     width: 100%;
     border-collapse: collapse;
@@ -257,17 +257,13 @@ a:focus, button:focus {
     text-transform: uppercase;
 }
 
-#articulos-medicos tbody tr:nth-child(even), #medicamentos1 tbody tr:nth-child(even) {
-    background-color: #f3f3f3;
+#articulos-medicos tbody, #medicamentos1 tbody  {
+    background-color: #fff;
 }
 
-#articulos-medicos tbody tr:hover, #medicamentos1 tbody tr:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-}
 
 #articulos-medicos a, #medicamentos1 a {
-    color: #009879;
+    color: #04725c;
     text-decoration: none;
 }
 
@@ -276,7 +272,7 @@ a:focus, button:focus {
 }
 
 #articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #04725c;
 }
 
 /*Responsive design*/
