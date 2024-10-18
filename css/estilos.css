@@ -94,10 +94,8 @@ width:1080px;
 margin:0 auto
 }
 
-table,tr,td,th {
-border:1px solid #00008b
-}
 
+/* Formularios*/
 form {
 width:100%;
 max-width:600px;
@@ -232,6 +230,55 @@ a:focus, button:focus {
 }
 
 
+/* Espaciado y distribución tablas */
+#articulos-medicos, #medicamentos1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#articulos-medicos caption h4, #medicamentos1 caption h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#articulos-medicos th, #medicamentos1 th {
+    background-color: #009879;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#articulos-medicos tbody tr:nth-child(even), #medicamentos1 tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+#articulos-medicos tbody tr:hover, #medicamentos1 tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#articulos-medicos a, #medicamentos1 a {
+    color: #009879;
+    text-decoration: none;
+}
+
+#articulos-medicos a:hover, #medicamentos1 a:hover {
+    text-decoration: underline;
+}
+
+#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
+    border-bottom: 1px solid #dddddd;
+}
+
 /*Responsive design*/
 /* Pantallas de baja resolución (480px o menos) */
 @media (max-width: 480px) {
@@ -297,54 +344,3 @@ a:focus, button:focus {
     overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
     margin-bottom: 20px;
 }
-
-/* Espaciado y distribución */
-#articulos-medicos, #medicamentos1 {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#articulos-medicos caption h4, #medicamentos1 caption h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-    padding: 12px 15px;
-    text-align: left;
-}
-
-#articulos-medicos th, #medicamentos1 th {
-    background-color: #009879;
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#articulos-medicos tbody tr:nth-child(even), #medicamentos1 tbody tr:nth-child(even) {
-    background-color: #f3f3f3;
-}
-
-#articulos-medicos tbody tr:hover, #medicamentos1 tbody tr:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-}
-
-#articulos-medicos a, #medicamentos1 a {
-    color: #009879;
-    text-decoration: none;
-}
-
-#articulos-medicos a:hover, #medicamentos1 a:hover {
-    text-decoration: underline;
-}
-
-#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-    border-bottom: 1px solid #dddddd;
-}
-
-
