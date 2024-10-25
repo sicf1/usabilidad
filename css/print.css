@@ -334,7 +334,6 @@
     /* Evitar que las tablas se corten entre páginas */
     table {
         page-break-inside: avoid;
-        page-break-after: initial;
     }
     #video-acne, #video-bruxismo {
         display: none;
