@@ -1,0 +1,346 @@
+/* Estilos de impresión */
+@media print {
+
+    /* Uso de tipografía serif y tamaño de texto adecuado para impresión */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12pt; /* Asegura un tamaño mínimo de texto */
+        line-height: 1.5;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    #declaracion {
+        display: none;
+    }
+
+    #migas-de-pan {
+        display: none;
+    }
+
+    #inicio {
+        display: none;
+    }
+
+    /* Quitar colores de fondo y otros estilos de pantalla */
+    body, header, footer, nav, aside, div {
+        background: none !important;
+        color: #000;
+    }
+
+    /* Formato de enlaces: subrayado y mostrar URL */
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+
+    /* Mostrar encabezado principal */
+    header {
+        display: block;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    header img {
+        width: auto;
+        height: 50px; /* Tamaño ajustado de logo */
+    }
+
+    /* Estilos para el contenido principal */
+    h1 {
+        font-size: 18pt;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 12pt;
+        margin: 10px 0;
+    }
+
+    
+
+    /* Pie de página existente */
+    footer {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 10pt;
+        color: #666;
+    }
+
+    
+
+    /* Copyright y créditos en el pie de página existente */
+    footer #copyright .copyright {
+        font-size: 10pt;
+        margin-top: 5px;
+    }
+
+    /* Estilo para la dirección institucional en el pie de página existente */
+    footer .direccion {
+        font-size: 9pt;
+        color: #666;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Mostrar la URL de la página impresa en el pie de página existente */
+    footer .url {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 10pt;
+    }
+
+    /* Eliminar elementos no esenciales */
+    #indice-alfabetico, .sidebar, #temas-destacados, #cuerpo-humano, #informacion, form, .boton-principal, .skip-link {
+        display: none !important;
+    }
+
+    nav #A, #B {
+        font-size: 14pt;
+        margin-bottom: 10px;
+    }
+
+    /* Asegurar que las imágenes esenciales se impriman */
+    img {
+        max-width: 100%;
+        height: auto;
+        page-break-inside: avoid;
+    }
+
+    /* Evitar que se corten los elementos clave entre páginas */
+    h1, h2, h3, p, ul, ol, table, img {
+        page-break-inside: avoid;
+    }
+
+    /* Ajustar saltos de página */
+    @page {
+        size: A4;
+        margin: 2cm;
+    }
+    /* Evitar saltos de página después de títulos y elementos importantes */
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    /* Formato de tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    /* Formato de avisos legales y copyright */
+    .legal {
+        font-size: 9pt;
+        color: #555;
+    }
+
+    nav ul, nav li, nav a {
+        display: block;
+        font-size: 12pt;
+        margin-bottom: 5px;
+    }
+    nav a {
+        text-decoration: underline;
+        color: #000;
+    }
+    /* Ajustar márgenes para que el índice quede bien organizado */
+    nav ul {
+        margin-left: 20px;
+    }
+
+    h1, h2, h3, p, ul, li, table {
+        page-break-inside: avoid;
+        margin-bottom: 10px;
+    }
+    
+    /* Ajustar márgenes de las listas */
+    ul {
+        margin-left: 20px;
+    }
+
+    /* Ajustar tamaño de las imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        page-break-inside: avoid;
+    }
+
+    /* Añadir subrayado a los enlaces y mostrar la URL para referencia */
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    /* Formato de tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+
+    h1, h2, h3, p, ul, li, table, img {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+    /* Mayor especificidad y uso de clases */
+    .migas-de-pan,
+    .boton-principal,
+    .sidebar {
+        display: none;
+    }
+
+    .titulo-principal {
+        font-size: 2em;
+    }
+
+    .enlace-externo:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #555;
+    }
+
+    /* Ajustes en listas */
+    ul, ol {
+        margin-left: 2em;
+    }
+
+    /* Ajustes en tablas */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #000;
+        padding: 0.5em;
+    }
+
+    /* Pie de página personalizado */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;     /* Ocupa todo el ancho disponible */
+        text-align: center;
+        font-size: 0.8em;
+        color: #666;
+        padding: 10px;
+        background-color: white;
+        height: 50px; 
+        border-top: 1px solid #000; /* Línea separadora del footer */
+        margin-top: 2em;
+
+    }
+    body {
+        text-align: justify;
+    }
+    body, h1, h2, h3, p, nav ul, nav li {
+        font-size: 12pt; /* Tamaño uniforme para todo */
+    }
+    header h1 {
+        font-size: 18pt;
+    }
+    /* Estilo general para la tabla */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Unir las líneas de las celdas */
+        margin-bottom: 20px;
+        border: 2px solid #000; /* Borde exterior de la tabla */
+    }
+
+    /* Estilo para las celdas de encabezado */
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        font-size: 12pt;
+        border: 1px solid #000; /* Bordes de las celdas de encabezado */
+    }
+
+    /* Estilo para las celdas de datos */
+    td {
+        padding: 10px;
+        font-size: 12pt;
+        text-align: left;
+        border: 1px solid #000; /* Bordes de las celdas de datos */
+        vertical-align: top;
+        word-wrap: break-word;
+    }
+
+    /* Ajustar el ancho de las columnas */
+    table th:nth-child(1),
+    table td:nth-child(1) {
+        width: 3%; /* ID */
+        text-align: center;
+    }
+
+    table th:nth-child(2),
+    table td:nth-child(2) {
+        width: 17%; /* Título */
+    }
+
+    table th:nth-child(3),
+    table td:nth-child(3) {
+        width: 35%; /* Resumen */
+    }
+
+    table th:nth-child(4),
+    table td:nth-child(4) {
+        width: 16%; /* Fecha */
+        text-align: center; /* Centrar contenido de la fecha */
+
+    }
+
+    table th:nth-child(5),
+    table td:nth-child(5) {
+        width: 16%; /* Fuente */
+        text-align: center; /* Centrar contenido de la fuente */
+
+    }
+
+    table th:nth-child(6),
+    table td:nth-child(6) {
+        width: 12%; /* Categoría */
+        text-align: center; /* Centrar contenido de la categoría */
+
+    }
+
+    /* Estilo para las celdas en filas alternas */
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* Centrar los textos cortos en columnas como ID, fecha y categoría */
+    td:nth-child(1),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6) {
+        text-align: center;
+    }
+    /* Evitar que las tablas se corten entre páginas */
+    table {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+    #video-acne, #video-bruxismo {
+        display: none;
+    }
+}
+
+
+
+  

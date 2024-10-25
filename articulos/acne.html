@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Acne - Biblioteca Médica</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css" title="Estilo principal">
+    <link rel="alternate stylesheet" href="../css/dark-mode.css" title="Modo noche">
+    <link rel="alternate stylesheet" href="../css/high-contrast.css" title="Alto contraste">
+    <link rel="alternate stylesheet" href="../css/large-font.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="../css/high-contrast-large-font.css" title="Alto contraste y texto grande">
+    <link rel="alternate stylesheet" href="../css/low-contrast.css" title="Bajo contraste">
+    <link rel="stylesheet" href="../css/print.css" media="print">
 </head>
 <body>
     <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
@@ -16,8 +22,8 @@
         <h1>Biblioteca Médica - Universidad de Alicante</h1>
     </header>
 
-    <main id="contenido">
-        <nav aria-label="Breadcrumb">
+    <main>
+        <nav id="migas-de-pan" aria-label="Breadcrumb">
             <a href="../index.html">Inicio</a>&gt; 
             <a href="../indices/indiceA.html">Indice A</a>&gt; 
             <a href="acne.html">Página Actual</a>
@@ -40,9 +46,9 @@
             </ul>  
         </nav>
         <aside id="acne">
-        <h2 id="acne">Acné</h2>
+        <h2 id="contenido">Acné</h2>
         <p>Es una afección cutánea que causa la formación de granos o "barros". Pueden aparecer comedones cerrados, espinillas negras y parches rojos e inflamados de la piel (como quistes).  </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yNrHpfuVTVA?si=xBv_E_hpGjl9JtSv" title="Vídeo: Acné causas y tratamiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="video-acne" width="560" height="315" src="https://www.youtube.com/embed/yNrHpfuVTVA?si=xBv_E_hpGjl9JtSv" title="Vídeo: Acné causas y tratamiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
         <h3 id="causas">Causas</h3>
         <p>El acné se presenta cuando se taponan los orificios diminutos en la superficie de la piel. Estos orificios se llaman poros.</p>
@@ -129,10 +135,12 @@
     
     <footer>
         <div class="contenedor">
-            <p><a href="../index.html">Inicio</a></p>
+            <p id="inicio"><a href="../index.html">Inicio</a></p>
             <p id="declaracion"><a href = "../extras/declaracion.html">Declaración de accesibilidad</a></h3>
             <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>  
         </div>
+        <div class="direccion">Dirección: Carr. de San Vicente del Raspeig s/n, Alicante, España</div>
+        <div class="url">https://sicf1.github.io/usabilidad/</div>
     </footer>
     
 </body>

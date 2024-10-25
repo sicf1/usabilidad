@@ -3,10 +3,10 @@
 --bg-color-2:#0b2b4c;
 --bg-color-3:#81c7fa;
 --bg-color-4:#5cc2f9;
---bg-color-5: #c6dfff;
+--bg-color-5: #9cd2f4;
 --color-1:#000;
 --color-2:#08c193;
---font-size:16px;
+--font-size:18px;
 --line-height:1.6
 }
 
@@ -94,8 +94,10 @@ width:1080px;
 margin:0 auto
 }
 
+table,tr,td,th {
+border:1px solid #00008b
+}
 
-/* Formularios*/
 form {
 width:100%;
 max-width:600px;
@@ -108,7 +110,7 @@ box-shadow:0 4px 8px #0000001a
 form label {
 display:block;
 margin-bottom:5px;
-font-size:16px;
+font-size:18px;
 color:#555
 }
 
@@ -116,7 +118,7 @@ form input,form select,form textarea {
 width:100%;
 padding:10px;
 margin-bottom:15px;
-font-size:16px;
+font-size:18px;
 border:1px solid #ccc;
 border-radius:5px
 }
@@ -126,7 +128,7 @@ width:100%;
 padding:10px;
 background-color:#007bff;
 color:#fff;
-font-size:16px;
+font-size:18px;
 border:none;
 border-radius:5px;
 cursor:pointer;
@@ -230,51 +232,6 @@ a:focus, button:focus {
 }
 
 
-/* Espaciado y distribución tablas*/
-#articulos-medicos, #medicamentos1 {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#articulos-medicos caption h4, #medicamentos1 caption h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-    padding: 12px 15px;
-    text-align: left;
-}
-
-#articulos-medicos th, #medicamentos1 th {
-    background-color: #009879;
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#articulos-medicos tbody, #medicamentos1 tbody  {
-    background-color: #fff;
-}
-
-
-#articulos-medicos a, #medicamentos1 a {
-    color: #04725c;
-    text-decoration: none;
-}
-
-#articulos-medicos a:hover, #medicamentos1 a:hover {
-    text-decoration: underline;
-}
-
-#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-    border-bottom: 1px solid #04725c;
-}
-
 /*Responsive design*/
 /* Pantallas de baja resolución (480px o menos) */
 @media (max-width: 480px) {
@@ -340,3 +297,87 @@ a:focus, button:focus {
     overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
     margin-bottom: 20px;
 }
+
+/* Espaciado y distribución */
+#articulos-medicos, #medicamentos1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#articulos-medicos caption h4, #medicamentos1 caption h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#articulos-medicos th, #medicamentos1 th {
+    background-color: #009879;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#articulos-medicos tbody, #medicamentos1 tbody  {
+    background-color: #fff;
+}
+
+
+#articulos-medicos a, #medicamentos1 a {
+    color: var(--bg-color-2);
+    text-decoration: none;
+}
+
+#articulos-medicos a:hover, #medicamentos1 a:hover {
+    text-decoration: underline;
+}
+
+#articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
+    border-bottom: 1px solid #04725c;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: 18px; /* Tamaño uniforme de 18px */
+    padding: 10px; /* Espaciado entre texto y borde */
+    border: 1px solid #000; /* Bordes para las celdas */
+    text-align: left; /* Alineación del texto */
+    vertical-align: top; /* Alineación vertical para mantener el contenido en la parte superior */
+}
+
+/* Ajustar las celdas de la tabla para que tengan el mismo ancho */
+th, td {
+    width: auto;
+    word-wrap: break-word; /* Ajustar el contenido a la celda */
+}
+
+th {
+    background-color: #006400; /* Color de fondo para el encabezado */
+    color: white; /* Color del texto del encabezado */
+}
+
+table {
+    table-layout: fixed; /* Garantiza que las columnas tengan un ancho fijo */
+}
+form {
+    text-align: left;
+}
+
+footer .direccion, .url {
+    display: none;
+}
+
+
+
