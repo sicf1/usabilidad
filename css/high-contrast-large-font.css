@@ -1,392 +1,76 @@
+@import url("estilos.css");
+
 :root {
     --bg-color-1:#fff;
     --bg-color-2:#0b2b4c;
     --bg-color-3:#cfe8fa;
     --bg-color-4:#c6dfff;
-    --bg-color-5: #c6dfff;
-    --bg-color-6: #020431;
+    --bg-color-5: #c6dfff; 
+    --bg-color-6:#020431;
+    --bg-color-7: #007bff; /*form button*/
+    --bg-color-8:#0056b3; /*form button hover*/
+    --bg-color-9: #eef5f9; /*search button*/
+    --bg-color-10:#04725c;
+    --bg-color-11: #e1e1e1;  /* Fondo oscuro */
     --color-1:#000;
     --color-2:#034837;
-    --font-size:18px;
-    --line-height:1.8;
-    }
     
-    body {
-    font-family:'Times New Roman',Times,serif,sans-serif;
-    font-size:2em;
-    line-height:var(--line-height);
-    color:var(--color-1);
-    margin:0
-    }
-    
-    header,footer {
-    justify-content:center;
-    position:relative;
-    z-index:10;
-    background: var(--bg-color-6);
-    color:#fff;
-    padding:.2em 4.5em
-    }
-    
-    a {
-    color:var(--color-1);
-    text-decoration:none
-    }
-    
-    a:hover {
-    text-decoration:underline
-    }
-    
-    img {
-    border-radius:15px
-    }
-    
-    #temas-destacados {
-    background-color:var(--bg-color-3)
-    }
-    
-    #cuerpo-humano {
-    background-color:var(--bg-color-4)
-    }
-    
-    #informacion {
-    background-color:var(--bg-color-1)
-    }
-    
-    .boton-principal {
-    background-color:var(--bg-color-6);
-    color:var(--bg-color-1);
-    border:1px solid var(--bg-color-2);
-    border-radius:2em;
-    font-weight:700;
-    padding:.5em;
-    font-size:1em;
-    display:inline-block
-    }
-    
-    .boton-principal:hover {
-    color:var(--bg-color-2);
-    background-color:var(--bg-color-1)
-    }
-    
-    #indice-alfabetico ul,#temas-destacados ul,#informacion ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-    display:flex;
-    place-content:space-between
-    }
-    
-    header,main,nav,aside,footer {
-    padding:1em
-    }
-    
-    #temas-destacados li img {
-    width:12em;
-    height:7em
-    }
-    
-    footer a {
-    color:var(--bg-color-1)
-    }
-    
-    div.contenedor {
-    width:1080px;
-    margin:0 auto
-    }
-    
-    
-    form {
-    width:100%;
-    max-width:1300px;
-    margin:0 auto;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 4px 8px #0000001a
-    }
-    
-    form label {
-    display:block;
-    margin-bottom:5px;
-    font-size:2em;
-    color:#555
-    }
-    
-    form input,form select,form textarea {
-    width:100%;
-    padding:10px;
-    margin-bottom:15px;
-    font-size:30px;
-    border:1px solid #000;
-    border-radius:5px
-    }
-    
-    form button {
-    width:100%;
-    padding:10px;
-    background-color:#007bff;
-    color:#fff;
+}
+header, footer {
+    background-color: var(--bg-color-6);
+}
+form button {
+    background-color: var(--bg-color-7);
+}
+form button:hover {
+    background-color: var(--bg-color-6);
+}
+body {
     font-size: 2em;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    transition:background-color .3s ease
-    }
+}
     
-    form button:hover {
-    background-color:#0056b3
-    }
+.boton-principal {
+    border-radius:2em;
+    font-size:1em;
+}
     
-    .search-form {
-    background-color:#eef5f9
-    }
+form {
+    max-width:1300px;
+}
     
-    .search-form fieldset {
-    border:1px solid #7e1b1b;
-    padding:10px;
-    margin-bottom:15px
-    }
+form label {
+    font-size:2em;
+}
     
-    .search-form legend {
-    font-weight:700;
-    color:#333
-    }
+form input,form select,form textarea {
+    font-size:30px;
+}
     
-    .contact-form {
-    background-color:#f0f4f8
-    }
+form button {
+    font-size:2em;
+}
     
-    .contact-form textarea {
-    height:120px;
-    resize:vertical
-    }
+/* Espaciado y distribución */
+#articulos-medicos, #medicamentos1 {
+    font-size: 2em;
+}
     
-    .loan-form {
-    background-color:#f0f4f8
-    }
+th, td {
+    font-size: 30px; /* Tamaño uniforme de 18px */
+}
     
-    .loan-form input[type="number"] {
-    width:100px
-    }
-    
-    .loan-form input[type="color"] {
-    width:auto;
-    padding:5px
-    }
-    
-    .loan-form input[type="range"] {
-    width:100%
-    }
-    
-    .loan-form input[type="tel"] {
-    width:250px
-    }
-    
-    /*Skip to main content*/
-    .skip-link {
-    position:absolute;
-    top:-40px;
-    left:0;
-    background-color:#08c193;
-    color:#fff;
-    padding:10px;
-    text-decoration:none;
-    z-index:100
-    }
-    
-    .skip-link:focus {
-    top:10px;
-    left:10px
-    }
-    
-    div.contenedor {
-        width: 100%;
-        max-width: 1080px;
-        margin: 0 auto;
-    }
-    
-    #A, #B, #error, #acne, #artritis, #bronquitis, #bruxismo {
-        background-color: var(--bg-color-4);
-    }
-    
-    
-    
-    /* Sección añadida para iconos y caracteres Unicode */
-    button {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5em;
-        padding: 0.5em 1em;
-        font-size: 1em;
-    }
-    
-    .material-symbols-outlined {
-        font-size: 1.5em; /* Ajuste del tamaño del icono */
-        vertical-align: middle;
-    }
-    
-    a:focus, button:focus {
-        outline: 2px solid #00e5ff; /* Para mejorar la accesibilidad */
-    }
-    
-    
-    /*Responsive design*/
-    /* Pantallas de baja resolución (480px o menos) */
-    @media (max-width: 480px) {
-        header, footer {
-            padding: 0.5em 1em; /* Ajustar paddings para pantallas más pequeñas */
-        }
-    
-        .boton-principal {
-            font-size: 24px; /* Ajustar el tamaño de los botones */
-            padding: 0.3em;
-        }
-    
-        div.contenedor {
-            width: 100%;
-        }
-    
-        /* Columnas apiladas para pantallas pequeñas */
-        #indice-alfabetico ul, #temas-destacados ul, #informacion ul {
-            flex-direction: column;
-        }
-    }
-    
-    /* Pantallas medianas (entre 481px y 1024px) */
-    @media (min-width: 481px) and (max-width: 1024px) {
-        header, footer {
-            padding: 0.5em 3em;
-        }
-    
-        div.contenedor {
-            width: 85%;
-        }
-    }
-    
-    /* Pantallas grandes (1025px a 1920px) */
-    @media (min-width: 1025px) {
-        header, footer {
-            padding: 0.5em 4.5em;
-        }
-    
-        div.contenedor {
-            max-width: 1200px;
-        }
-    
-        #indice-alfabetico ul, #temas-destacados ul, #informacion ul {
-            display: flex;
-            place-content: space-between;
-        }
-    }
-    
-    /* Pantallas extra grandes (más de 1920px) */
-    @media (min-width: 1921px) {
-        div.contenedor {
-            max-width: 1400px;
-        }
-    
-        header, footer {
-            padding: 1em 6em;
-        }
-    }
-    
-    .table-responsive {
-        width: 100%;
-        overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
-        margin-bottom: 20px;
-    }
-    
-    /* Espaciado y distribución */
-    #articulos-medicos, #medicamentos1 {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-size: 2em;
-        font-family: 'Times New Roman', Times, serif;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    #articulos-medicos caption h4, #medicamentos1 caption h4 {
-        font-size: 1em;
-        margin-bottom: 10px;
-    }
-    
-    #articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-        padding: 12px 15px;
-        text-align: left;
-    }
-    
-    #articulos-medicos th, #medicamentos1 th {
-        background-color: var(--color-2);
-        color: #ffffff;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    
-    #articulos-medicos tbody, #medicamentos1 tbody  {
-        background-color: #fff;
-    }
-    
-    
-    #articulos-medicos a, #medicamentos1 a {
-        color: var(--color-2);
-        text-decoration: none;
-    }
-    
-    #articulos-medicos a:hover, #medicamentos1 a:hover {
-        text-decoration: underline;
-    }
-    
-    
-    #articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-        border-bottom: 1px solid var(--color-2);
-    }
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    
-    th, td {
-        font-size: 24px; /* Tamaño uniforme de 18px */
-        padding: 10px; /* Espaciado entre texto y borde */
-        border: 1px solid #000; /* Bordes para las celdas */
-        text-align: left; /* Alineación del texto */
-        vertical-align: top; /* Alineación vertical para mantener el contenido en la parte superior */
-    }
-    
-    /* Ajustar las celdas de la tabla para que tengan el mismo ancho */
-    th, td {
-        width: auto;
-        word-wrap: break-word; /* Ajustar el contenido a la celda */
-    }
-    
-    th {
-        background-color: #006400; /* Color de fondo para el encabezado */
-        color: white; /* Color del texto del encabezado */
-    }
-    
-    table {
-        table-layout: fixed; /* Garantiza que las columnas tengan un ancho fijo */
-    }
-    form {
-        text-align: left;
-    }
-    h1 {
-        font-size: 2.7em;
-    }
-    h2 {
-        font-size: 2.5em;
-    }
-    h3 {
-        font-size: 2.3em;
-    }
-    header h1 {
-        font-size: 2.7em;
-    }
-    main .boton-principal {
-        font-size:36px;
-    }
-    footer .direccion, .url {
-        display: none;
-    }
+h1 {
+    font-size: 2.7em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2.3em;
+}
+header h1 {
+    font-size: 2.7em;
+}
+main .boton-principal {
+    font-size:36px;
+}

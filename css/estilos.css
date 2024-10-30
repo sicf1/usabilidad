@@ -3,11 +3,26 @@
 --bg-color-2:#0b2b4c;
 --bg-color-3:#81c7fa;
 --bg-color-4:#5cc2f9;
---bg-color-5: #9cd2f4;
+--bg-color-5: #9cd2f4; 
+--bg-color-6:#08c193;
+--bg-color-7: #007bff; /*form button*/
+--bg-color-8:#0056b3; /*form button hover*/
+--bg-color-9: #eef5f9; /*search button*/
+--bg-color-10:#04725c;
+--bg-color-11: #e1e1e1;  /* Fondo oscuro */
 --color-1:#000;
 --color-2:#08c193;
+--color-3: #fff;
+--color-4: #00008b; /*borde tablas*/
+/*colores formularios*/
+--color-5: #0000001a;
+--color-6: #555;
+--color-7: #ccc;
+--color-8: #7e1b1b;
+--color-9: #04725c;
 --font-size:18px;
 --line-height:1.6
+
 }
 
 body {
@@ -23,7 +38,7 @@ justify-content:center;
 position:relative;
 z-index:10;
 background-color:var(--bg-color-2);
-color:#fff;
+color: var(--color-3);
 padding:.2em 4.5em
 }
 
@@ -86,7 +101,7 @@ height:7em
 }
 
 footer a {
-color:var(--bg-color-1)
+color:var(--bg-color-1);
 }
 
 div.contenedor {
@@ -95,7 +110,7 @@ margin:0 auto
 }
 
 table,tr,td,th {
-border:1px solid #00008b
+border:1px solid var(--color-4);
 }
 
 form {
@@ -104,14 +119,14 @@ max-width:600px;
 margin:0 auto;
 padding:20px;
 border-radius:10px;
-box-shadow:0 4px 8px #0000001a
+box-shadow:0 4px 8px var(--color-5);
 }
 
 form label {
 display:block;
 margin-bottom:5px;
 font-size:18px;
-color:#555
+color: var(--color-6);
 }
 
 form input,form select,form textarea {
@@ -119,43 +134,43 @@ width:100%;
 padding:10px;
 margin-bottom:15px;
 font-size:18px;
-border:1px solid #ccc;
-border-radius:5px
+border:1px solid var(--color-7);
+border-radius:5px;
 }
 
 form button {
 width:100%;
 padding:10px;
-background-color:#007bff;
-color:#fff;
+background-color: var(--bg-color-6);
+color: var(--color-3);
 font-size:18px;
 border:none;
 border-radius:5px;
 cursor:pointer;
-transition:background-color .3s ease
+transition:background-color .3s ease;
 }
 
 form button:hover {
-background-color:#0056b3
+background-color: var(--bg-color-7);
 }
 
 .search-form {
-background-color:#eef5f9
+background-color:var(--bg-color-9);
 }
 
 .search-form fieldset {
-border:1px solid #7e1b1b;
+border:1px solid var(--color-8);
 padding:10px;
 margin-bottom:15px
 }
 
 .search-form legend {
 font-weight:700;
-color:#333
+color:var(--color-1)
 }
 
 .contact-form {
-background-color:#f0f4f8
+background-color:var(--bg-color-9)
 }
 
 .contact-form textarea {
@@ -164,7 +179,7 @@ resize:vertical
 }
 
 .loan-form {
-background-color:#f0f4f8
+background-color: var(--bg-color-9)
 }
 
 .loan-form input[type="number"] {
@@ -187,10 +202,10 @@ width:250px
 /*Skip to main content*/
 .skip-link {
 position:absolute;
-top:-40px;
+top:-999px;
 left:0;
-background-color:#08c193;
-color:#fff;
+background-color:var(--bg-color-6);
+color: var(--color-3);
 padding:10px;
 text-decoration:none;
 z-index:100
@@ -319,19 +334,19 @@ a:focus, button:focus {
 }
 
 #articulos-medicos th, #medicamentos1 th {
-    background-color: #009879;
-    color: #ffffff;
+    background-color: var(--bg-color-6);
+    color: var(--color-3);
     font-weight: bold;
     text-transform: uppercase;
 }
 
 #articulos-medicos tbody, #medicamentos1 tbody  {
-    background-color: #fff;
+    background-color: var(--bg-color-1)
 }
 
 
 #articulos-medicos a, #medicamentos1 a {
-    color: var(--bg-color-2);
+    color: var(--color-4);
     text-decoration: none;
 }
 
@@ -340,7 +355,7 @@ a:focus, button:focus {
 }
 
 #articulos-medicos th, #articulos-medicos td, #medicamentos1 th, #medicamentos1 td {
-    border-bottom: 1px solid #04725c;
+    border-bottom: 1px solid var(--color-9);
     text-align: center;
 }
 
@@ -352,7 +367,7 @@ table {
 th, td {
     font-size: 18px; /* Tamaño uniforme de 18px */
     padding: 10px; /* Espaciado entre texto y borde */
-    border: 1px solid #000; /* Bordes para las celdas */
+    border: 1px solid var(--color-1); /* Bordes para las celdas */
     text-align: left; /* Alineación del texto */
     vertical-align: top; /* Alineación vertical para mantener el contenido en la parte superior */
 }
@@ -364,8 +379,8 @@ th, td {
 }
 
 th {
-    background-color: #006400; /* Color de fondo para el encabezado */
-    color: white; /* Color del texto del encabezado */
+    background-color: var(--bg-color-10); /* Color de fondo para el encabezado */
+    color: var(--color-3); /* Color del texto del encabezado */
 }
 
 table {
