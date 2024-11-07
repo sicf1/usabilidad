@@ -393,6 +393,8 @@ form {
 footer .direccion, .url {
     display: none;
 }
-
-
+#video-amara {
+    width: 560px;
+    height: 315PX;
+}
 
