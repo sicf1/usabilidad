@@ -222,7 +222,7 @@ div.contenedor {
     margin: 0 auto;
 }
 
-#A, #B, #error, #acne, #artritis, #bronquitis, #bruxismo {
+#A, #B, #D, #error, #acne, #artritis, #bronquitis, #bruxismo {
     background-color: var(--bg-color-5);
 }
 
