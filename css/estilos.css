@@ -4,14 +4,14 @@
 --bg-color-3:#81c7fa;
 --bg-color-4:#5cc2f9;
 --bg-color-5: #9cd2f4; 
---bg-color-6:#068465;
+--bg-color-6:#13886b;
 --bg-color-7: #007bff; /*form button*/
 --bg-color-8:#0056b3; /*form button hover*/
 --bg-color-9: #eef5f9; /*search button*/
---bg-color-10:#04725c;
+--bg-color-10:#13886b;
 --bg-color-11: #e1e1e1;  /* Fondo oscuro */
 --color-1:#000;
---color-2:#068465;
+--color-2:#088566;
 --color-3: #fff;
 --color-4: #00008b; /*borde tablas*/
 /*colores formularios*/
@@ -202,7 +202,7 @@ width:250px
 /*Skip to main content*/
 .skip-link {
 position:absolute;
-top:-20px;
+top:-40px;
 left:0;
 background-color:var(--bg-color-6);
 color: var(--color-3);
