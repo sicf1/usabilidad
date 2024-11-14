@@ -50,4 +50,8 @@
     main .boton-principal {
         font-size:36px;
     }
+    /*Skip to main content*/
+    .skip-link {
+        top:-999px;
+    }
     
