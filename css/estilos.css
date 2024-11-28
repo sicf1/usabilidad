@@ -178,6 +178,11 @@ height:120px;
 resize:vertical
 }
 
+.reclamacion-form textarea {
+    height:120px;
+    resize:vertical
+}
+
 .loan-form {
 background-color: var(--bg-color-9)
 }

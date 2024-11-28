@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Reclamación - Biblioteca Médica</title>
+    <link rel="stylesheet" href="../css/estilos.css" title="Estilo principal">
+    <link rel="alternate stylesheet" href="../css/dark-mode.css" title="Modo noche">
+    <link rel="alternate stylesheet" href="../css/high-contrast.css" title="Alto contraste">
+    <link rel="alternate stylesheet" href="../css/large-font.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="../css/high-contrast-large-font.css" title="Alto contraste y texto grande">
+    <link rel="alternate stylesheet" href="../css/low-contrast.css" title="Bajo contraste">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <figure>
+                <img src="../imagenes/logo-biblioteca-medica.png" alt="Logo biblioteca médica">
+            </figure>
+        </a>
+        <h1>Biblioteca Médica - Universidad de Alicante</h1>
+    </header>
+    <main>
+        <nav aria-label="Breadcrumb">
+            <a href="../index.html">Inicio</a> &gt; 
+            <a href="reclamacion.html">Formulario de Reclamación</a>
+        </nav>
+        
+        <form action="../formularios/consulta.html" method="get" class="reclamacion-form">
+            <h2>Formulario de Reclamación</h2>
+            <p>Instrucciones: Por favor, rellena todos los campos obligatorios marcados con un asterisco (*). Asegúrate de proporcionar información precisa para que podamos atender tu reclamación de manera adecuada.</p>
+            
+            <label for="asunto">Motivo de la reclamación*: 
+                <input id="asunto" name="motivo" type="text" required placeholder="Describe brevemente el motivo">
+            </label>
+
+            <label for="detalles">Detalles de la reclamación*: 
+                <textarea id="detalles" name="detalles" required placeholder="Explica tu reclamación en detalle"></textarea>
+            </label>
+
+            <label for="categoria">Categoría de la reclamación*:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Selecciona una categoría</option>
+                <option value="servicio">Servicio</option>
+                <option value="producto">Producto</option>
+                <option value="atencion">Atención al cliente</option>
+                <option value="otros">Otros</option>
+            </select>
+            
+            <label for="fechaIncidente">Fecha del incidente*: 
+                <input type="date" id="fechaIncidente" name="fechaIncidente" required>
+            </label>
+        
+            <p>Sexo:</p>
+            <label for="hombre">
+                <span class="material-symbols-outlined">male</span> Hombre 
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+            </label>
+            <label for="mujer">
+                <span class="material-symbols-outlined">female</span> Mujer 
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+            </label>
+            <label for="otro">
+                <span class="material-symbols-outlined">agender</span> Otro 
+                <input type="radio" id="otro" name="sexo" value="otro">
+            </label>
+            
+            <label for="correo"><span class="material-symbols-outlined">mail</span> Correo electrónico*: 
+                <input type="email" id="correo" name="correo" required placeholder="tuemail@ejemplo.com">
+            </label>
+            
+            <label for="telefono"><span class="material-symbols-outlined">call</span> Teléfono de contacto: 
+                <input type="tel" id="telefono" name="telefono" placeholder="Número de contacto">
+            </label>
+            
+            <p>Acepto los términos y condiciones*: 
+                <input type="checkbox" id="terminos" name="terminos" required>
+            </p>
+            
+            <button type="submit">Enviar Reclamación</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p><a href="../index.html">Inicio</a></p>
+            <p id="declaracion"><a href="../extras/declaracion.html">Declaración de accesibilidad</a></p>
+            <p>&copy; 2024 Sofía Isabella Cabrera Febres, Mariana Cortés Ossa. Todos los derechos reservados.</p>  
+        </div>
+    </footer>
+</body>
+</html>
